@@ -171,11 +171,15 @@
 
             var total_months = parseInt(total_days / 30)
 
-            var total_intrest = ((item.amount/100) * total_months * 2)
+            var per_day = ((item.amount/100)* 2)/30
+
+            // var total_intrest = ((item.amount/100) * total_months * 2)
+
+            var total_intrest = total_days * per_day
 
             var total = item.amount + total_intrest
 
-            var per_day = ((item.amount/100)* 2)/30
+            
 
             var per_month = (item.amount/100)*2
 
